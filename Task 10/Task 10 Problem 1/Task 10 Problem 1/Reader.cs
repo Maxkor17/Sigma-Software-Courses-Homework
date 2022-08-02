@@ -21,7 +21,7 @@ class Reader
     public static Dictionary<string, string> ReadDictionary(string filePath)
     {
         Dictionary<string, string> result = new Dictionary<string, string>();
-        if (!File.Exists(filePath)) throw new FileNotFoundException("Not found dictionry");
+        if (!File.Exists(filePath)) throw new FileNotFoundException("Not found dictionary");
         using (StreamReader reader = new StreamReader(filePath))
         {
             while (!reader.EndOfStream)
